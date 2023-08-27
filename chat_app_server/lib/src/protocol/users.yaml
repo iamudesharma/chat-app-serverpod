@@ -1,0 +1,19 @@
+### Represents a chat channel.
+class: User
+table: users
+fields:
+  ### The name of the channel.
+  name: String
+  phone: int?
+  createdAt: DateTime?
+  updatedAt: DateTime?
+  userInfo: module:auth:UserInfo
+  isOnline: bool?
+  lastOnline: DateTime?
+  latitude: double?
+  longitude: double?
+  profilePicture: String?
+
+indexes:
+  user_name_idx:
+    fields: name

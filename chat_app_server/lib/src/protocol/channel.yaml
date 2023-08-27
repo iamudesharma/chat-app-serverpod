@@ -1,0 +1,16 @@
+### Represents a chat channel.
+class: Channel
+table: channel
+fields:
+  ### The name of the channel.
+  name: String
+
+  participants: List<User>?
+  ### The id of the channel.
+  channel: String
+  createdAt: DateTime?
+  updatedAt: DateTime?
+
+indexes:
+  channel_name_idx:
+    fields: channel, updatedAt
